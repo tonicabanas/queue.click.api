@@ -1,0 +1,51 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Python ###
+
+# Django
+*.py[cod]
+*.log
+*.pots
+*.pyc
+__pycache__/
+media
+staticfiles/
+
+# Logs
+*.log
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+htmlcov
+
+### Vim ###
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+### Pycharm ###
+.idea/
+.idea_modules/

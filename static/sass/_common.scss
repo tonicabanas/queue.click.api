@@ -1,0 +1,79 @@
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/box-sizing";
+@import "breakpoint";
+
+// VARIABLES
+$mobile: max-width 767px;
+$tablet: 768px 1159px;
+$desktop: min-width 1160px;
+$no-mobile: min-width 768px;
+$no-desktop: max-width 1159px;
+$retina: min-resolution 1.5dppx, max-width 768px;
+
+$font: 'allerregular';
+$font-bold: 'allerbold';
+$font-light: 'aller_lightregular';
+
+// COLORS
+$white: white;
+$black: black;
+$grey: #5a5a5a;
+$grey-mid: #909090;
+$grey-light: #ecf0f1;
+$green: #007660;
+$green-mid: #09e2a3;
+$green-mid2: #0fb896;
+$green-light: #e5f7f4;
+$green-dark: #2a7a64;
+$brown: #cea628;
+$brown-dark: #a28425;
+$red: #f4164a;
+$red-light: #fe3231;
+$orange: #ed7742;
+$orange-dark: #a6552d;
+
+// MIXINS
+@mixin image-replacement($image) {
+  display: block;
+  width: image-width($image);
+  height: image-height($image);
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: image-url($image) no-repeat;
+  color: transparent;
+}
+
+@mixin image-replacement-retina($image) {
+  display: block;
+  width: image-width($image);
+  height: image-height($image);
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: image-url('2x/' + $image) no-repeat;
+  background-size: image-width($image) image-height($image);
+}
+
+@mixin user-select-disable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin border-box {
+  @include box-sizing(border-box);
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+input[type="button"] {
+  -webkit-appearance: none;
+}

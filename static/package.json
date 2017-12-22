@@ -1,0 +1,42 @@
+{
+  "name": "yaap-contest",
+  "description": "Yaap contest",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "Jaime Herencia Enjuto",
+    "email": "jherencia@webpartners.es"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/yaap-contest",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt": "~0.4.2"
+  },
+  "keywords": [],
+  "dependencies": {
+    "grunt-cache-breaker": "~0.5.6"
+  }
+}
