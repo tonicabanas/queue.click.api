@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.utils.timezone
-import queue.users.managers
+import queueclick.users.managers
 
 
 class Migration(migrations.Migration):
@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
                 'verbose_name': 'user',
             },
             managers=[
-                ('objects', queue.users.managers.UserManager()),
+                ('objects', queueclick.users.managers.UserManager()),
             ],
         ),
     ]
