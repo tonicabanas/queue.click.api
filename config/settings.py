@@ -21,6 +21,8 @@ DEBUG = env.bool('DJANGO_DEBUG', default=False)
 
 ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', default='').replace(' ', ',').split(',')
 
+AUTH_USER_MODEL = 'users.User'
+
 # Application definition
 
 DJANGO_APPS = [
@@ -39,7 +41,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    # YOUR APPS
+    'queue.queues',
+    'queue.users'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
