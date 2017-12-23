@@ -3,3 +3,4 @@ django-environ==0.4.4
 django-debug-toolbar==1.9.1
 raven==6.3.0
 django-model-utils==3.0.0
+graphene-django==2.0.0

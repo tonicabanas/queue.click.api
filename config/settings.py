@@ -35,6 +35,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    'graphene_django',
 
 ]
 
@@ -261,3 +262,11 @@ if RAVEN_ENABLED:
 if 'test' in sys.argv:
     # Put here any configuration that you want to change or set only for testing purposes
     pass
+
+# GRAPHENE
+
+GRAPHENE = {
+    'SCHEMA': 'config.schema.schema',
+}
+
+GRAPHIQL_ENABLED = env.bool('DJANGO_GRAPHIQL_ENABLED', default=False)
