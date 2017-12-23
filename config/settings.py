@@ -35,14 +35,12 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    # FOR EXAMPLE THIS ONES
-    # 'rest_framework',
-    # 'django_extensions',
+
 ]
 
 LOCAL_APPS = [
-    'queue.queues',
-    'queue.users'
+    'queueclick.queues',
+    'queueclick.users'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -1,0 +1,30 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$THBdXVi4hKOm$7qCeq7nCOTD+PPuEHniB8IE3Aq4A3jHBuM/vR844YBU=",
+      "last_login": null,
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-12-23T21:39:25.974Z",
+      "email": "tonicabanas@queue.click",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "queues.queue",
+    "pk": "0a311832-fabc-4c30-971f-f9be19f7115c",
+    "fields": {
+      "user": 1,
+      "start_time": "09:00:00",
+      "end_time": "18:00:00",
+      "shared_token": "ee6fc2cc-02ad-4465-a738-25ad7fa814a0",
+      "events": []
+    }
+  }
+]
