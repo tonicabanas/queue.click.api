@@ -13,7 +13,6 @@ class Queue(models.Model):
     start_time = models.TimeField()
     end_time = models.TimeField()
     shared_token = models.UUIDField(unique=True, default=uuid4, editable=False)
-    events = models.ManyToManyField('Event')
 
     def __str__(self):
         return '{}'.format(self.uuid)
@@ -26,6 +25,7 @@ class Event(TimeStampedModel, StatusModel):
     reporter_name = TruncatingCharField(max_length=40)
     description = models.TextField(max_length=140)
     estimated_time_min = models.PositiveIntegerField(validators=[MinValueValidator(1)])
+    queue = models.ForeignKey('Queue', related_name='events', on_delete=models.CASCADE)
 
     def __str__(self):
         return '{} - {}'.format(self.uuid, self.reporter_name)

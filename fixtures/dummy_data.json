@@ -1,0 +1,59 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$THBdXVi4hKOm$7qCeq7nCOTD+PPuEHniB8IE3Aq4A3jHBuM/vR844YBU=",
+      "last_login": null,
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-12-23T21:39:25.974Z",
+      "email": "tonicabanas@queue.click",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "queues.queue",
+    "pk": "0a311832-fabc-4c30-971f-f9be19f7115c",
+    "fields": {
+      "user": 1,
+      "start_time": "09:00:00",
+      "end_time": "18:00:00",
+      "shared_token": "ee6fc2cc-02ad-4465-a738-25ad7fa814a0"
+    }
+  },
+  {
+    "model": "queues.event",
+    "pk": "9b46ea86-4678-4b8e-97d0-36d6f4342332",
+    "fields": {
+      "created": "2017-12-23T23:54:56.239Z",
+      "modified": "2017-12-23T23:57:22.204Z",
+      "status": "pending",
+      "status_changed": "2017-12-23T23:54:56.239Z",
+      "order": 1,
+      "reporter_name": "Otra persona",
+      "description": "Call skype test",
+      "estimated_time_min": 120,
+      "queue": "0a311832-fabc-4c30-971f-f9be19f7115c"
+    }
+  },
+  {
+    "model": "queues.event",
+    "pk": "bbe77f8f-b4ef-415e-99a6-b3e0cdfa12af",
+    "fields": {
+      "created": "2017-12-23T23:54:56.239Z",
+      "modified": "2017-12-23T23:56:42.072Z",
+      "status": "pending",
+      "status_changed": "2017-12-23T23:54:56.239Z",
+      "order": 0,
+      "reporter_name": "Toni Cabanas",
+      "description": "Descansar",
+      "estimated_time_min": 20,
+      "queue": "0a311832-fabc-4c30-971f-f9be19f7115c"
+    }
+  }
+]
