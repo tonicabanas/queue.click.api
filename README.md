@@ -13,6 +13,7 @@ queue.click API repository
 
 *DJANGO_SECRET_KEY* - Django secret key [generator](www.miniwebtool.com/django-secret-key-generator/) 
 
+*DJANGO_GRAPHIQL_ENABLED* - Enabled Graphiql on browser
 
 ### Infrastructure 
 
